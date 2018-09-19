@@ -1,0 +1,19 @@
+{% load bootstrap4 %}
+
+<div class="container order-form text-center" id="form">
+  <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+        <form action="" method="post" class='form' id='data-form'>
+          {% csrf_token %}
+          {% bootstrap_form form layout='inline' %}
+          <input type="submit" class="btn btn-primary btn-custom col-md-3" id="order-ok" name="submit">
+
+          {% buttons %}
+              <!-- <button type="submit" class="btn btn-primary btn-custom col-md-3">
+                  Отправить
+              </button> -->
+          {% endbuttons %}
+        </form>
+      </div>
+  </div>
+</div>

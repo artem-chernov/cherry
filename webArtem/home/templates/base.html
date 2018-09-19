@@ -1,0 +1,51 @@
+{% extends 'bootstrap4/bootstrap4.html' %}
+{% load bootstrap4 %}
+{% load staticfiles %}
+{% block bootstrap4_extra_head %}
+<link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+{% endblock %}
+
+{% block bootstrap4_before_content %}
+
+<ul class="nav justify-content-center fixed-top">
+  <li class="nav-item">
+    <a class="nav-link active" href="#tovar">О товаре</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#testimonial">Отзывы</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#form">Заказать</a>
+  </li>
+</ul>
+
+{% endblock %}
+
+{% block bootstrap4_after_content%}
+<br>
+<p class="container col-sm form-text form"> Как сделать заказ? Просто заполните форму и наши менеджеры свяжутся с Вами в ближайшее время! </p>
+{% include 'test_form.html' with form=form %}
+<div class="container navbar navbar-expand-sm navbar-light bg-light">
+
+<div class="text-center">
+  <img src="static/img/np_logo.png" class="img-fluid" alt="Responsive image" >
+  <img src="static/img/privat_logo.png" class="img-fluid" alt="Responsive image">
+  <img src="static/img/visa_logo.png" class="img-fluid" alt="Responsive image">
+  <img src="static/img/master_logo.png" class="img-fluid" alt="Responsive image">
+</div>
+
+</div>
+
+<a id="back-to-top" href="#" class="back-to-top" role="button" title="Наверх страницы" data-toggle="tooltip" data-placement="left">
+  <svg id="i-caret-top" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <path d="M30 22 L16 6 2 22 Z" />
+  </svg>
+</a>
+{% endblock %}
+{% block bootstrap4_extra_script %}
+{% bootstrap_javascript jquery='full' %}
+<script type="text/javascript" src="{% static '/js/wind_ok.js' %}"></script>
+<script type="text/javascript" src="{% static '/js/scripts.js' %}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+{% endblock %}

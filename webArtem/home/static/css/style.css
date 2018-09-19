@@ -1,0 +1,194 @@
+.first{
+  color: blue;
+}
+a {
+  color: black;
+}
+.nav{
+  background-color: white;
+}
+.jumbotron{
+  background-image: url("/static/img/cherry_bg.jpg");
+  height: 100vh;
+  width: 100vw;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.secont_text {
+  color: black;
+  background-color: white;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: bold;
+}
+.display-4, .lead {
+  display: inline-block;
+  color: black;
+  background-color: white;
+  text-align: center;
+  margin: 25px;
+  font-weight: bold;
+}
+.lead{
+font-weight: 600;
+}
+
+.cards {
+  width: 70vw;
+  margin-top: 20px;
+}
+#tovar {
+  width: 50vw;
+}
+#testimonial {
+  width: 70vw;
+  margin-top: 20px;
+}
+.card-img-bottom {
+    width: 100%;
+    height: auto;
+}
+.card {
+  margin: 30px;
+}
+.card-title, .card-text {
+  text-align: center;
+}
+.container-fluid {
+display: grid;
+grid-template-columns: 30% 30% 30%;
+width: 100vw;
+}
+.card-img-top {
+  border-radius: 100px;
+}
+.card1 {
+  margin: 20px;
+}
+p, a{
+  text-align: center;
+}
+
+.top-button {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: red;
+  border-color: black;
+  text-align: center;
+}
+.btn:hover{
+  background-color: green;
+  border-color: black;
+}
+
+.img-fluid {
+  max-width: 10%;
+  padding-left: 10px;
+}
+
+.back-to-top, #back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+
+#i-caret-top {
+  width: 60px;
+  height: 60px;
+}
+
+.order_form {
+  width: 80vw;
+  margin-bottom: 50px;
+}
+.form-text {
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  margin: 20px;
+  width: 90vw;
+}
+
+.navbar-expand-sm, .navbar {
+  width: 100vw;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+body{
+  width: 100vw;
+}
+
+.cards {
+  margin:25px;
+}
+#tovar {
+  margin: 20px;
+  width: 90vw;
+}
+.container-fluid {
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+width: 100%;
+}
+.jumbotron{
+  height: 100vh;
+  width: 100vw;
+}
+
+.top-button {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+}
+.secont_text {
+  color: black;
+  background-color: white;
+  text-align: center;
+  font-weight: 400;
+}
+.display-4, .lead {
+  color: black;
+  background-color: white;
+  text-align: center;
+  opacity: 100;
+}
+
+#i-caret-top {
+  width: 30px;
+  height: 30px;
+}
+
+.form-text {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.navbar-expand-sm {
+    width: 100vw;
+}
+.img-fluid {
+  max-width: 20%;
+}
+
+.back-to-top, #back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display:none;
+}
+
+}
